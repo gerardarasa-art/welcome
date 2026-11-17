@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerard | El meu perfil</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(135deg,
+                #090510, #211038, #090510);
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 35px 20px;
+            background: #11091c;
+            border-bottom: 2px solid #a855f7;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: #c084fc;
+            margin: 0;
+        }
+
+        header p {
+            color: #bbb;
+        }
+
+        .contenidor {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .perfil {
+            background: #1c122c;
+            padding: 35px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid #673ab7;
+            box-shadow: 0 0 25px #4b2070;
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #a855f7;
+        }
+
+        h2 {
+            color: #c084fc;
+        }
+
+        .etiquetes {
+            margin: 25px 0;
+        }
+
+        .etiquetes span {
+            background: #7136a0;
+            padding: 10px 16px;
+            margin: 5px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .targeta {
+            background: #1c122c;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 18px;
+            border: 1px solid #45305f;
+        }
+
+        .spotify {
+            width: 100%;
+            border: none;
+            border-radius: 14px;
+        }
+
+        .boto {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #a855f7;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .boto:hover {
+            background: #7e22ce;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .contenidor {
+                margin: 15px auto;
+            }
+
+            .perfil {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>GERARD ARASA</h1>
+        <p>Benvingut al meu perfil personal 🚀</p>
+    </header>
+
+    <main class="contenidor">
+
+        <section class="perfil">
+
+            <img src="../img/Gerard.jpg"
+                 alt="Foto de Gerard"
+                 class="foto">
+
+            <h2>Gerard Arasa Sardo</h2>
+
+            <p>
+                Hola! Soc estudiant de DAW1
+                a l'Institut Montsià.
+            </p>
+
+            <p>
+                M'agrada la informàtica,
+                els videojocs i la música.
+            </p>
+
+            <div class="etiquetes">
+                <span>💻 Programació</span>
+                <span>🎮 Gaming</span>
+                <span>🎵 Música</span>
+                <span>🔐 Ciberseguretat</span>
+            </div>
+
+        </section>
+
+        <section class="targeta">
+
+            <h2>GOUT</h2>
+
+            <iframe
+                class="spotify"
+                src="https://open.spotify.com/embed/track/27hhDyCqi0cLgl5rmcXOXX"
+                height="152"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+
+
+        <section class="targeta">
+
+            <h2>🔗 El meu GitHub</h2>
+
+            <p>
+                Aquí pots veure els meus projectes.
+            </p>
+
+            <a class="boto"
+               href="https://github.com/gerardarasa-art"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visitar GitHub
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Gerard Arasa Sardo | DAW1</p>
+    </footer>
+
+</body>
+</html>
